@@ -9,6 +9,8 @@ let radiologia = [
 ];
 
 document.write('<p>Cantidad de atenciones para Radiología: ', radiologia.length);
+document.write('<p>Primera Atención: ', radiologia[0].paciente +' | ' + 'Última atención: ', radiologia[4].paciente);
+console.log(radiologia[0]);
 
 let traumatologia = [
     {hora: '8:00', especialista: 'María Paz Altuzarra', paciente: 'Paula Sánchez', rut: '15554774-5', prevision: 'Fonasa'},
@@ -21,6 +23,7 @@ let traumatologia = [
 ]
 
 document.write('<p>Cantidad de atenciones para traumatología: ', traumatologia.length);
+document.write('<p>Primera Atención: ', traumatologia[0].paciente + ' - ' + traumatologia[traumatologia.length -1] + ' | ' + 'Útima atención: ', traumatologia[6].paciente);
 
 let dental = [
     {hora: '8:30', especialista: 'Andrea Zuñiga', paciente: 'Marcela Retamal', rut: '11123425-6', prevision: 'Isapre'},
@@ -32,3 +35,4 @@ let dental = [
 ]
 
 document.write('<p>Cantidad de atenciones para Dental: ', dental.length);
+document.write('<p>Primera Atención: ', dental[0].paciente + ' | ' + 'Última atención: ', dental[5].paciente);
