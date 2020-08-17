@@ -1,5 +1,3 @@
-document.write('<p>Estadisticas Centro Medico Ñuñoa</p>');
-
 let radiologia = [
     {hora: '11:00', especialista: 'Ignacio Schulz', paciente: 'Francisca Rojas', rut: '9878782-1', prevision: 'Fonasa'},
     {hora: '11:30', especialista: 'Federico Subercaseaux', paciente: 'Pamela Estrada', rut: '15345241-3', prevision: 'Isapre'},
@@ -7,9 +5,6 @@ let radiologia = [
     {hora: '15:30', especialista: 'Ana Maria Godoy', paciente: 'Manuel Godoy', rut: '17666419-0', prevision: 'Fonasa'},
     {hora: '16:00', especialista: 'Patricia Suazo', paciente: 'Ramon Ulloa', rut: '14989389-K', prevision: 'Fonasa'},
 ];
-
-document.write('<p>Cantidad de atenciones para Radiología: ', radiologia.length);
-document.write('<p>Primera Atención: ', radiologia[0].paciente + ' - ' + radiologia[0].prevision + ' | ' + 'Última atención: ', radiologia[4].paciente + ' - ' + radiologia[4].prevision);
 
 let traumatologia = [
     {hora: '8:00', especialista: 'María Paz Altuzarra', paciente: 'Paula Sánchez', rut: '15554774-5', prevision: 'Fonasa'},
@@ -21,8 +16,6 @@ let traumatologia = [
     {hora: '12:30', especialista: 'Andres Kanacri', paciente: 'Marcial Suazo', rut: '11254785-5', prevision: 'Isapre'},
 ]
 
-document.write('<p>Cantidad de atenciones para traumatología: ', traumatologia.length);
-document.write('<p>Primera Atención: ', traumatologia[0].paciente + ' - ' + traumatologia[0].prevision + ' | ' + 'Útima atención: ', traumatologia[6].paciente + ' - ' + traumatologia[6].prevision);
 
 let dental = [
     {hora: '8:30', especialista: 'Andrea Zuñiga', paciente: 'Marcela Retamal', rut: '11123425-6', prevision: 'Isapre'},
@@ -33,5 +26,13 @@ let dental = [
     {hora: '14:00', especialista: 'Raquel Villaseca', paciente: 'Ana Sepulveda', rut: '14441281-0', prevision: 'Isapre'},
 ]
 
+document.write('<p>Estadisticas Centro Medico Ñuñoa</p>');
+
+document.write('<p>Cantidad de atenciones para Radiología: ', radiologia.length);
+document.write('<p>Primera Atención: ', radiologia[0].paciente + ' - ' + radiologia[0].prevision + ' | ' + 'Última atención: ', radiologia[4].paciente + ' - ' + radiologia[4].prevision);
+
+document.write('<p>Cantidad de atenciones para traumatología: ', traumatologia.length);
+document.write('<p>Primera Atención: ', traumatologia[0].paciente + ' - ' + traumatologia[0].prevision + ' | ' + 'Útima atención: ', traumatologia[6].paciente + ' - ' + traumatologia[6].prevision);
+
 document.write('<p>Cantidad de atenciones para Dental: ', dental.length);
-document.write('<p>Primera Atención: ', dental[0].paciente + ' - ' + dental[0].prevision + ' | ' + 'Última atención: ', dental[5].paciente + ' - ' + dental[5].prevision);
+sdocument.write('<p>Primera Atención: ', dental[0].paciente + ' - ' + dental[0].prevision + ' | ' + 'Última atención: ', dental[5].paciente + ' - ' + dental[5].prevision);
